@@ -57,6 +57,10 @@ if (pos > 45){
  pos = pos -1;
 }
 }
+  
+if (GamePad.isSquarePressed()){
+  pos = 90; 
+}
 
 if (GamePad.getYaxisData() > 2){
   digitalWrite(in1, LOW);
